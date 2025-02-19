@@ -1,9 +1,34 @@
 # dental-scheduler
 
 
-To run the app, run `python main.py`
+Create a virtual environment with 
+```
+python -m venv venv
+```
 
-You can set it yourself, but I made the default today's date be 2024-11-01T00:00:00 which November 1st, 2024.
+Activate the virtual environment with 
+```
+source venv/bin/activate
+```
+
+Install the requirements with 
+```
+pip install -r requirements.txt
+```
+
+Install all the python packages with 
+```
+pip install -r requirements.txt
+```
+
+Make sure to set the `COSMOS_CONNECTION_STRING` environment variable and the OpenAI API key in your `.env` file.
+
+To run the app, run 
+```
+python main.py
+```
+
+You can set it yourself, but I made the default today's date be `2024-11-01T00:00:00` which November 1st, 2024.
 
 
 ## Schema
