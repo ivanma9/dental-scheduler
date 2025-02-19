@@ -11,7 +11,6 @@ today = "2024-11-01T00:00:00"
 def greet_user():
     print("Welcome to the CosmosDB Chat CLI!")
     print("You can ask me to perform operations like querying appointments.")
-    print("Type 'exit' to quit the chat.")
     print(f"Today's date is: {today.split('T')[0]}")
 
 
@@ -51,6 +50,7 @@ def main():
     greet_user()
     chat_history = []
     while True:
+        print("Type 'exit' to quit the chat.")
         user_input = input("You: ")
         if "exit" in user_input:
             print("Goodbye!")
@@ -63,6 +63,7 @@ def main():
             print(SQL_command)
         else:
             results = execute_command(SQL_command, db, container)
+        
 
 if __name__ == '__main__':
     main()

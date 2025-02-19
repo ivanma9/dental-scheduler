@@ -62,6 +62,11 @@ def parse_command_with_openai(input_text, chat_history):
     {
         "query": "SELECT * FROM c WHERE c.name = 'John'"
     }
+    Notes on Data:
+    patient status refers to the status of the appointment. It can be "cancelled", "confirmed", "pending". This status reveals whether the patient came for their appointment or not, or in the process of doing so. Cancelled appointments or no-shows are referred to as cancelled, confirmed appointments or patients who came for their appointment are referred to as confirmed, and pending appointments are referred to as pending.
+    The provider is the name of the dentist or dental assistant who is providing the service.
+    The column is the column in the dental office where the appointment is taking place.
+    The practiceId is the id of the dental practice where the appointment is taking place.
 
     Follow these rules:
     ALL SQL commands are CosmosDB SQL commands. (example DATEPART('weekday', c.Time) in SQL should be DateTimePart('weekday', c.Time) in CosmosDB SQL. return the query in the format of CosmosDB SQL)

@@ -1,6 +1,11 @@
 # dental-scheduler
 
 
+To run the app, run `python main.py`
+
+You can set it yourself, but I made the default today's date be 2024-11-01T00:00:00 which November 1st, 2024.
+
+
 ## Schema
 
 ### appointments
